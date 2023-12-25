@@ -7,14 +7,12 @@ import { Scan } from './Screens/Scan';
 import { PaymentHistory } from './Screens/PaymentHistory';
 import { Account} from './Screens/Account';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
 export default function App() {
 
   const Tab = createBottomTabNavigator();
 
   return (
-    <PaperProvider>
-
+     <PaperProvider>
     
     <NavigationContainer>
 

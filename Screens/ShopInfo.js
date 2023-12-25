@@ -1,15 +1,25 @@
 import React from 'react'
-import { View , Text } from 'react-native'
-import { Header } from '../Components/Header'
+import { View, Text } from 'react-native'
+import {   SafeAreaProvider,   useSafeAreaInsets, } from 'react-native-safe-area-context';
 
 export const ShopInfo = () => {
+  const insets = useSafeAreaInsets();
+
   return (
-    <View>
-      <Header/>
-      <Text className="text-yellow-600">
-        This Shop Info scren
-      </Text>
-    </View>
+    <SafeAreaProvider>
+      <View
+        style={{
+          paddingTop: insets.top,
+          paddingBottom: insets.bottom,
+          paddingLeft: insets.left,
+          paddingRight: insets.right,
+        }}
+      >
+        <Text className="p-2" >This is ShopInfo Screen </Text>
+    
+      </View>
+
+    </SafeAreaProvider>
   )
 }
 
