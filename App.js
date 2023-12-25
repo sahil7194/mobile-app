@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
 import { Button } from 'react-native-paper';
+import { Home } from './Screens/Home';
+import { Header } from './Components/Header';
 
 export default function App() {
   return (
@@ -12,6 +14,9 @@ export default function App() {
       <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
     Press me
   </Button>
+
+      <Home/>
+      <Header/>
     </View>
     </PaperProvider>
   );
