@@ -1,8 +1,10 @@
 import React from 'react'
-import {   FlatList,   SafeAreaView,   StatusBar,   StyleSheet,  Text,   TouchableOpacity,} from 'react-native';
+import {  Text,  TouchableOpacity,} from 'react-native';
 
-export const Category = ({item, onPress, backgroundColor, textColor}) => (
-      <TouchableOpacity onPress={onPress} style={[styles.item, {backgroundColor}]}>
-        <Text style={[styles.title, {color: textColor}]}>{item.title}</Text>
-      </TouchableOpacity>
-    );
+export const Category = ({item}) => {
+  return (
+    <TouchableOpacity  className="border border-pink-500 w-1/5">
+    <Text>{item.name}</Text>
+  </TouchableOpacity>
+  )
+}
